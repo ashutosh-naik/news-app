@@ -68,7 +68,7 @@ nav {
 }
 
 .company-logo img {
-  width: 60px;
+  width: 56px;
 }
 
 .nav-links ul {
@@ -87,6 +87,10 @@ nav {
 
 .hover-link:active {
   color: #9db2bf;
+}
+
+.nav-item.active {
+  color: var(--accent-color);
 }
 
 .search-bar {
@@ -109,7 +113,7 @@ nav {
   background-color: var(--accent-color);
   color: #ffffff;
   border: none;
-  height: 35px;
+  height: 36px;
   font-size: 14px;
   font-family: var(--heading-font-family);
   border-radius: 4px;
