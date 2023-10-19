@@ -8,11 +8,10 @@
     <title>News App</title>
   </head>
   <body>
-    
     <nav>
       <div class="main-nav container flex">
         <a href="/" class="company-logo">
-          <img src="/assets/logo.png" alt="news logo">
+          <img src="/assets/logo.png" alt="news logo" />
         </a>
 
         <div class="nav-links">
@@ -25,13 +24,42 @@
         </div>
 
         <div class="search-bar flex">
-          <input type="text" class="news-input" placeholder="Search Latest News">
+          <input
+            type="text"
+            class="news-input"
+            placeholder="Search Latest News"
+          />
           <button class="search-button">Search</button>
         </div>
       </div>
     </nav>
 
-    <main></main>
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget: 19/10/2023</h6>
+          <p class="news-desc" id="news-desc">
+            With updates from Rushdi Abualouf in Gaza; Lyse Doucet, Lucy
+            Williamson in southern Israel; Jeremy Bowen, Paul Adams, Yolande
+            Knell, Tom Bateman and Joel Gunter in Jerusalem; Anna Foster in
+            northern Israel; and Hugo Bachega in Beirut
+          </p>
+        </div>
+      </div>
+    </template>
 
     <script src="script.js"></script>
   </body>
