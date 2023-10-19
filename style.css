@@ -36,4 +36,11 @@ ul {
 
 .flex {
   display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  overflow: hidden;
 }
