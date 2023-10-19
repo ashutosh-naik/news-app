@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,12 @@
 
 :root {
   --primary-text-color: #ffffff;
-  --secondary-text-color: #fff4f4;
-  --background-color: #121212;
+  --secondary-text-color: #f2f2f2;
+  --background-color: #1c1c1c;
+  --accent-color: #5272f2;
+  --accent-color-dark: #425ce4;
+  --heading-font-family: "Inter", Arial, Helvetica, sans-serif;
+  --main-font-family: "Hind", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -15,13 +21,13 @@ html {
 }
 
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: var(--heading-font-family);
   background-color: var(--background-color);
   color: var(--primary-text-color);
 }
 
 p {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: var(--main-font-family);
   color: var(--secondary-text-color);
   line-height: 1.4rem;
 }
@@ -43,4 +49,74 @@ ul {
   max-width: 1200px;
   margin-inline: auto;
   overflow: hidden;
+}
+
+nav {
+  background-color: #121212;
+  box-shadow: 1px 1px 4px #0c0c0c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.main-nav {
+  justify-content: space-between;
+  padding-block: 8px;
+}
+
+.company-logo img {
+  width: 60px;
+}
+
+.nav-links ul {
+  gap: 20px;
+}
+
+.hover-link {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.hover-link:hover {
+  color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+  color: #9db2bf;
+}
+
+.search-bar {
+  height: 36px;
+  gap: 8px;
+}
+
+.news-input {
+  width: 200px;
+  height: 100%;
+  padding-inline: 12px;
+  font-size: 14px;
+  font-family: var(--heading-font-family);
+  border-radius: 4px;
+  border: 1px solid #121212;
+  outline: none;
+}
+
+.search-button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  height: 35px;
+  font-size: 14px;
+  font-family: var(--heading-font-family);
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.search-button:hover {
+  background-color: var(--accent-color-dark);
 }
